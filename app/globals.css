@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-teal: #084C61;
+  --color-pacific-blue: #489FB5;
+  --color-magenta-bloom: #E34A6F;
+  --color-white-base: #FFFEFF;
+
+  --font-family-heebo: var(--font-heebo), sans-serif;
+}
+
+/* RTL Base Styles */
+body {
+  direction: rtl;
+  text-align: start;
+  font-family: var(--font-heebo), sans-serif;
+}
+
+/* Accessibility: High Contrast Mode */
+.high-contrast {
+  --color-dark-teal: #000000;
+  --color-pacific-blue: #0066CC;
+  --color-magenta-bloom: #CC0033;
+}
+
+.high-contrast * {
+  border-color: currentColor !important;
+}
+
+.high-contrast a,
+.high-contrast button {
+  text-decoration: underline;
+}
+
+/* Accessibility: Large Text Mode */
+.large-text {
+  font-size: 125% !important;
+}
+
+.large-text h1 {
+  font-size: 3.5rem !important;
+}
+
+.large-text h2 {
+  font-size: 2.5rem !important;
+}
+
+.large-text h3 {
+  font-size: 2rem !important;
+}
+
+.large-text p,
+.large-text span,
+.large-text a,
+.large-text button {
+  font-size: 1.5rem !important;
+}
+
+/* Accessibility: Extra Large Text Mode */
+.xlarge-text {
+  font-size: 150% !important;
+}
+
+.xlarge-text h1 {
+  font-size: 4rem !important;
+}
+
+.xlarge-text h2 {
+  font-size: 3rem !important;
+}
+
+.xlarge-text h3 {
+  font-size: 2.5rem !important;
+}
+
+.xlarge-text p,
+.xlarge-text span,
+.xlarge-text a,
+.xlarge-text button {
+  font-size: 1.75rem !important;
+}
+
+/* Accessibility: No Animations */
+.no-animations *,
+.no-animations *::before,
+.no-animations *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Focus Styles */
+*:focus-visible {
+  outline: 3px solid var(--color-pacific-blue);
+  outline-offset: 2px;
+}
+
+/* Skip to Content Link */
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  inset-inline-start: 0;
+  background: var(--color-dark-teal);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Smooth Scroll for non-reduced-motion users */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

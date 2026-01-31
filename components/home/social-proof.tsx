@@ -11,7 +11,7 @@ const partners = [
   { name: 'מטב', image: '/inst_logos/matav.png' },
   { name: 'כלים שלובים', image: '/inst_logos/kelim-meshalvim.png' },
   { name: 'שירדיו', image: '/inst_logos/shiradio.png' },
-  { name: 'יוניפר קייר', image: '/inst_logos/uniper Care.png' },
+  { name: 'יוניפר קייר', image: '/inst_logos/uniper_Care.png' },
 ];
 
 export function SocialProof() {

@@ -12,7 +12,7 @@ export function Footer() {
             <h3 className="mb-4 text-lg font-bold">אודות Tech-Therapy</h3>
             <p className="text-sm leading-relaxed text-white/90">
               מסלולי טכנולוגיה ו-AI מותאמים אישית לאנשים עם צרכים מיוחדים.
-              מטפל מוסמך עם ניסיון בתחום הטכנולוגיה והנגישות.
+              מטפל רגשי מוסמך עם ניסיון בהדרכה, הוראה והנגשת טכנולוגיות.
             </p>
           </div>
 

@@ -2,9 +2,20 @@ import React from 'react';
 import Link from 'next/link';
 import { SectionWrapper } from '@/components/shared/section-wrapper';
 import { AnimatedWrapper } from '@/components/shared/animated-wrapper';
-import { Smartphone, Briefcase, Music, HeartHandshake } from 'lucide-react';
+import { Sparkles, Smartphone, Briefcase, HeartHandshake } from 'lucide-react';
 
 const courses = [
+  {
+    icon: Sparkles,
+    title: 'חדשנות, AI ויצירה דיגיטלית',
+    description: 'חיבור לטכנולוגיות החדשות ביותר, פיתוח יצירתיות ופנאי.',
+    highlights: [
+      'יצירת תוכן ואמנות באמצעות AI',
+      'עיצוב גרפי ומדיה דיגיטלי',
+      'עריכת מוזיקה ופנאי',
+      'ניהול רשתות חברתיות',
+    ],
+  },
   {
     icon: Smartphone,
     title: 'עצמאות דיגיטלית',
@@ -25,16 +36,6 @@ const courses = [
       'שיחות וידאו',
       'הכנה לעולם התעסוקה',
       'כתיבת קורות חיים ומכתבי מוטיבציה',
-    ],
-  },
-  {
-    icon: Music,
-    title: 'חדשנות, מוזיקה ופנאי',
-    description: 'יצירה באמצעות AI, עריכת מוזיקה, ופיתוח תחביבים דיגיטליים.',
-    highlights: [
-      'יצירת אמנות ב-AI',
-      'עריכת מוזיקה ו-DJ',
-      'כלי יצירה דיגיטליים',
     ],
   },
   {

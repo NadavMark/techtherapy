@@ -10,7 +10,7 @@ export function Footer() {
           {/* About Column */}
           <div>
             <h3 className="mb-4 text-lg font-bold">אודות Tech-Therapy</h3>
-            <p className="text-sm leading-relaxed text-white/90">
+            <p className="text-sm leading-relaxed text-white/90 text-justify">
               מסלולי טכנולוגיה ו-AI מותאמים אישית לאנשים עם צרכים מיוחדים.
               מטפל רגשי מוסמך עם ניסיון בהדרכה, הוראה והנגשת טכנולוגיות.
             </p>
@@ -75,7 +75,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-white/20 pt-8 text-center">
-          <p className="text-sm text-white/80">
+          <p className="text-sm text-white/80 text-justify">
             &copy; {new Date().getFullYear()} Tech-Therapy. כל הזכויות שמורות.
           </p>
           <p className="mt-2 text-sm text-white/80">

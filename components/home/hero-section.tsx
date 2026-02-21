@@ -14,7 +14,7 @@ export function HeroSection() {
 
         <AnimatedWrapper delay={0.2}>
           <p className="mb-8 text-lg leading-relaxed md:text-xl lg:text-2xl text-white/90">
-          עצמאות דיגיטלית, שימוש בסמארטפון ומחשב וטיפול רגשי מקוון לאנשים עם צרכים מיוחדים 
+            שימוש בסמארטפון ומחשב וטיפול רגשי מקוון באמצעות כלים דיגיטליים
           </p>
         </AnimatedWrapper>
 
@@ -29,7 +29,7 @@ export function HeroSection() {
 
         <AnimatedWrapper delay={0.6}>
           <p className="mt-8 text-sm text-white/70">
-            בואו ללמוד טכנולוגיה בצורה מותאמת ונגישה
+            להתפתח וללמוד עם המחשב והסמרטפון
           </p>
         </AnimatedWrapper>
       </div>

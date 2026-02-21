@@ -3,6 +3,7 @@ import { Heebo } from "next/font/google";
 import "./globals.css";
 import { AccessibilityProvider } from "@/components/accessibility/accessibility-provider";
 import { AccessibilityWidget } from "@/components/accessibility/accessibility-widget";
+import { Analytics } from "@vercel/analytics/next";
 
 const heebo = Heebo({
   subsets: ["hebrew", "latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
           {children}
           <AccessibilityWidget />
         </AccessibilityProvider>
+        <Analytics />
       </body>
     </html>
   );

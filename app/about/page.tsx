@@ -12,7 +12,7 @@ export default function AboutPage() {
 
         {/* Section 1 — אודות (plain, no box) */}
         <SectionWrapper className="min-h-fit !py-4 md:!py-6">          <AnimatedWrapper delay={0}>
-          <h1 className="mb-8 text-4xl font-bold text-dark-teal md:text-5xl ">אודות Tech-Therapy</h1>
+          <h1 className="mb-8 text-4xl font-bold text-dark-teal md:text-5xl ">אודות הגישה, הטיפול והלמידה</h1>
         </AnimatedWrapper>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">

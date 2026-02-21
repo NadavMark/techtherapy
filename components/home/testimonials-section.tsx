@@ -93,10 +93,6 @@ export function TestimonialsSection() {
           ))}
         </div>
       </div>
-
-      <AnimatedWrapper delay={0.4}>
-
-      </AnimatedWrapper>
     </SectionWrapper>
   );
 }

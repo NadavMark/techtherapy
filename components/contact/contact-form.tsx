@@ -85,7 +85,7 @@ export function ContactForm() {
   };
 
   const whatsappNumber = '972545800899';
-  const whatsappMessage = encodeURIComponent('Tech-Therapy שלום, אני מעוניין/ת לקבל מידע נוסף על הפעילויות שלכם! אשמח לשוחח ' );
+  const whatsappMessage = encodeURIComponent('Tech-Therapy שלום, אני מעוניין/ת לקבל מידע נוסף על הפעילויות שלכם! אשמח לשוחח ');
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
@@ -96,7 +96,7 @@ export function ContactForm() {
             צור קשר
           </h2>
           <p className="mb-12 text-center text-gray-600">
-            נשמח לשמוע ממך ולספק מידע נוסף על המסלולים
+            ניתן ליצור קשר למידע נוסף בנוגע לטיפול, קורסים או סדנאות
           </p>
         </AnimatedWrapper>
 
@@ -121,9 +121,8 @@ export function ContactForm() {
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
-                    className={`w-full rounded-lg border-2 px-4 py-3 text-end transition-colors focus:outline-none focus:ring-2 focus:ring-pacific-blue ${
-                      errors.fullName ? 'border-magenta-bloom' : 'border-gray-300'
-                    }`}
+                    className={`w-full rounded-lg border-2 px-4 py-3 text-end transition-colors focus:outline-none focus:ring-2 focus:ring-pacific-blue ${errors.fullName ? 'border-magenta-bloom' : 'border-gray-300'
+                      }`}
                     aria-required="true"
                     aria-invalid={!!errors.fullName}
                     aria-describedby={errors.fullName ? 'fullName-error' : undefined}
@@ -146,9 +145,8 @@ export function ContactForm() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className={`w-full rounded-lg border-2 px-4 py-3 text-end transition-colors focus:outline-none focus:ring-2 focus:ring-pacific-blue ${
-                      errors.phone ? 'border-magenta-bloom' : 'border-gray-300'
-                    }`}
+                    className={`w-full rounded-lg border-2 px-4 py-3 text-end transition-colors focus:outline-none focus:ring-2 focus:ring-pacific-blue ${errors.phone ? 'border-magenta-bloom' : 'border-gray-300'
+                      }`}
                     aria-required="true"
                     aria-invalid={!!errors.phone}
                     aria-describedby={errors.phone ? 'phone-error' : undefined}
@@ -171,9 +169,8 @@ export function ContactForm() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full rounded-lg border-2 px-4 py-3 text-end transition-colors focus:outline-none focus:ring-2 focus:ring-pacific-blue ${
-                      errors.email ? 'border-magenta-bloom' : 'border-gray-300'
-                    }`}
+                    className={`w-full rounded-lg border-2 px-4 py-3 text-end transition-colors focus:outline-none focus:ring-2 focus:ring-pacific-blue ${errors.email ? 'border-magenta-bloom' : 'border-gray-300'
+                      }`}
                     aria-invalid={!!errors.email}
                     aria-describedby={errors.email ? 'email-error' : undefined}
                   />

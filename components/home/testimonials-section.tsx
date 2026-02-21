@@ -36,7 +36,7 @@ export function TestimonialsSection() {
   }, [emblaApi]);
 
   return (
-      <SectionWrapper className="bg-gradient-to-br from-dark-teal via-dark-teal to-pacific-blue">      
+    <SectionWrapper className="bg-gradient-to-br from-dark-teal via-dark-teal to-pacific-blue">
       <AnimatedWrapper>
         <h2 className="mb-12 text-center text-3xl font-bold text-white md:text-4xl">
           המלצות
@@ -50,17 +50,15 @@ export function TestimonialsSection() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="min-w-0 flex-[0_0_100%] px-4"
+                className="min-w-0 flex-[0_0_100%] px-4 md:px-12 flex justify-center items-center py-4"
               >
-                <div className="relative mx-auto aspect-[4/3] max-w-2xl overflow-hidden rounded-lg bg-white shadow-xl">
-                  <Image
-                    src={testimonial.image}
-                    alt={testimonial.alt}
-                    fill
-                    className="object-contain"
-                    priority={index === 0}
-                  />
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.alt}
+                  className="max-h-[75vh] w-auto max-w-full rounded-xl shadow-2xl object-contain"
+                  loading={index === 0 ? "eager" : "lazy"}
+                />
               </div>
             ))}
           </div>
@@ -97,9 +95,7 @@ export function TestimonialsSection() {
       </div>
 
       <AnimatedWrapper delay={0.4}>
-        <p className="mt-8 text-center text-white">
-          אנחנו גאים בשיתופי הפעולה ובמשוב החיובי שאנו מקבלים
-        </p>
+
       </AnimatedWrapper>
     </SectionWrapper>
   );
